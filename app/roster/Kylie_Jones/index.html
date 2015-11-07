@@ -3,13 +3,25 @@
   <html>
     <head>
       <title>Kylie Jones</title>
+      <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
+      <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+      <!-- endbuild -->
+
+      <!-- will be replaced with elements/elements.vulcanized.html -->
+      <link rel="import" href="/elements/elements.html">
+      <!-- endreplace-->
     </head>
     <body style="margin: 0">
-      <img src="sunset.jpg" style="width: 100%">
+      <span id="browser-sync-binding"></span>
+      <fullbleed-image id="mainHeaderImage" uri="blueflower.jpg">
+        <div class="image-title">Kylie Jones</div>
+        <div>
+          Hi I'm Kylie Jones and I am a member of the Drake Developer's Club.
+          I am new to coding and am exited for this year, and to learn more.
+          I am a jonior and trying to explore new possible career choices.
+        </div>
+      </fullbleed-image>
       <div style="margin: 10px">
-        Hi I'm Kylie Jones and I am a member of the Drake Developer's Club.
-        I am new to coding and am exited for this year, and to learn more.
-        I am a jonior and trying to explore new possible career choices.
       </div>
     </body>
   </html>
